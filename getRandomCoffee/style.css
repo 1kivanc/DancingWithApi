@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400;500&family=Source+Sans+Pro:wght@200;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #2C2828;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+
+}input,button{
+    font-size: 1.2rem;
+    padding:10px 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+input{
+    font-weight: bold;
+}
+h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.container{
+    justify-content: center;
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding:3rem;
+}
+
+.box{
+   
+    margin:10px ;
+    width: 300px;
+    background-color: #fff;
+    border-radius:15px;
+
+}.box img {
+    
+    width: 100%;
+    padding:10px;
+    border-radius:15px;
+
+}.box h4 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight:500;
+}.box p{
+    
+    margin: 5px auto;
+    font-weight:bolder;
+}.dead{
+    color: red;
+}header{
+    width: 100%;
+
+}nav{
+    padding:0px 10px 0px 10px ;
+    position :fixed;
+    width: 100%;
+    background-color: #333;
+
+}ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}li{
+    float: left;
+}
+li a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+li input{
+    display:flex;
+    justify-content:flex-end;
+}
