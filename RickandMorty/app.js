@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
 const btn = document.querySelector(".btn");
 const statusA = document.querySelector(".status");
+const search = document.querySelector("#search");
 
 let count = 100;
 
@@ -38,7 +39,7 @@ const createBox = (character) => {
     `
     <img src="${image}"/>
 
-    <h4 >${name}</h4>
+    <h4 class="name" >${name}</h4>
     <p>species: ${species}</p>
     <p>gender: ${gender}</p>
     <p>status: ${status}</p>    `;
@@ -48,3 +49,18 @@ const createBox = (character) => {
 
 
 charCount();
+
+search.addEventListener('input' , function (e) {
+    const name = document.querySelectorAll(".name");
+    const searchChar = search.value.toLowerCase();
+
+    name.forEach((name) => {
+        
+        name.parentElement.style.display = "block";
+        
+        if(!name.innerHTML.toLowerCase().includes(searchChar)){
+            name.parentElement.style.display = "none";
+        }
+    }) ;
+
+})
